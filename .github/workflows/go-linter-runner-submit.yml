@@ -33,6 +33,9 @@ jobs:
           repository: teslaedison/diylint  # 这里是你的私有仓库
           ref: main 
           token: ${{ secrets.GITHUB_TOKEN }}
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
 
       - name: Run go-linter-runner to submit repos
         uses: alingse/go-linter-runner@main
