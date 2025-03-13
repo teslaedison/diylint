@@ -29,6 +29,9 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+        with: # 不加这三行的话，action会报找不到当前这个仓库
+          repository: owner/repo  # 这里是你的私有仓库
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Run go-linter-runner to submit repos
         uses: alingse/go-linter-runner@main
