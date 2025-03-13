@@ -30,7 +30,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
         with: # 不加这三行的话，action会报找不到当前这个仓库
-          repository: owner/repo  # 这里是你的私有仓库
+          repository: teslaedison/diylint  # 这里是你的私有仓库
           ref: main 
           token: ${{ secrets.GITHUB_TOKEN }}
 
