@@ -1,4 +1,4 @@
-name: submit-repos
+name: submit-repos-nilnesserr
 run-name: "Submit ${{inputs.count}} repos for ${{ inputs.workflow }} from ${{ inputs.source }}"
 
 on:

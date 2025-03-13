@@ -1,4 +1,4 @@
-name: run-repo
+name: run-repo-nilnesserr
 run-name: "run `nilnesserr` for ${{github.event.inputs.repo_url}}"
 
 on:
